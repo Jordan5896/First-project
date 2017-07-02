@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane fx:id="pane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fx:id="image1" fitHeight="600.0" fitWidth="917.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/hq1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="tittleLabel" layoutX="261.0" layoutY="101.0" text="History is Fun!" textAlignment="JUSTIFY" textFill="RED">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="marathonLabel" layoutX="238.0" layoutY="182.0" text="The battle of Marathon" textFill="RED">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="enterName" layoutX="337.0" layoutY="275.0" promptText="enter Name" />
+      <Button fx:id="startButton" layoutX="374.0" layoutY="382.0" mnemonicParsing="false" onAction="#buttonMethod" text="Start Game" />
+      <AnchorPane fx:id="introPane" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="815.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/hq2.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#ffd200" layoutX="138.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Battle of Marathon (Greek: Μάχη τοῦ Μαραθῶνος, Machē tou Marathōnos) took place in 490 BC, during the first Persian invasion of Greece. It was fought between the citizens of Athens, aided by Plataea, and a Persian force commanded by Datis and Artaphernes. The battle was the culmination of the first attempt by Persia, under King Darius I, to subjugate Greece. The Greek army decisively defeated the more numerous Persians, marking a turning point in the Greco-Persian Wars." textAlignment="JUSTIFY" wrappingWidth="494.13671875">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="introButton" layoutX="615.0" layoutY="480.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="37.0" prefWidth="82.0" text="Continue" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ionianRevoltPane" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="606.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/hq4.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="14.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The first Persian invasion was a response to Athenian involvement in the Ionian Revolt, when Athens and Eretria had sent a force to support the cities of Ionia in their attempt to overthrow Persian rule. The Athenians and Eretrians had succeeded in capturing and burning Sardis, but they were then forced to retreat with heavy losses. In response to this raid, Darius swore to burn down Athens and Eretria." textAlignment="JUSTIFY" wrappingWidth="757.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="ionianButton" layoutX="662.0" layoutY="409.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="37.0" prefWidth="91.0" text="Continue" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="dariusVow" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="612.0" fitWidth="1146.0" layoutX="-4.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/hq6.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="40.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" According to Herodotus, Darius asked for his bow, he placed an arrow upon the string and he discharged it upwards towards heaven, and as he shot into the air he said: &quot;Zeus, grant me to take vengeance upon the Athenians!&quot;, and vowed to burn Eretria and Athens to the ground. Also he charged one of his servants, to say &quot;Master, remember the Athenians.&quot; three times before dinner each day." textAlignment="JUSTIFY" wrappingWidth="593.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="dariusVowButton" layoutX="656.0" layoutY="494.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="37.0" prefWidth="98.0" text="Continue" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="revoltEndPane" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="817.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/hq8.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="75.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Once the Ionian revolt was finally crushed by the Persian victory at the Battle of Lade in 494 BC, Darius began plans to conquer Greece. In 490 BC, he sent a naval task force under Datis and Artaphernes across the Aegean, to subjugate the Greeck islands, and then  attack  Athens and Eretria" textAlignment="JUSTIFY" wrappingWidth="401.771484375">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="revoltEndButton" layoutX="588.0" layoutY="445.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="53.0" prefWidth="98.0" text="Continue" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="agoraPane" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="608.0" fitWidth="801.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/33.jpeg" />
+               </image>
+            </ImageView>
+            <Text fill="#da0000" layoutX="32.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Athens constitution is a Democracy where the citizens vote in the Agora (public square). News of their Ionian allies defeat has reached the Athenians. Terrified they learn that Darius has send a large military force to burn Athens to the ground and enslave the population. They have voted for YOU to be in charge of Athens defence. Victory means freedom, defeat means death and slavery." textAlignment="JUSTIFY" wrappingWidth="736.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="agoraButton" layoutX="582.0" layoutY="513.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="37.0" prefWidth="98.0" text="Continue" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="chooseGeneralPane" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="621.0" fitWidth="458.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/36.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="621.0" fitWidth="478.0" layoutX="355.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/34.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#e5ff00" layoutX="343.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="general!">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Text>
+            <Text fill="#fffb00" layoutX="152.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose your" wrappingWidth="179.13671875">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Text>
+            <Button fx:id="chooseGeneralButton" layoutX="687.0" layoutY="516.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="43.0" prefWidth="98.0" text="Continue" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="options1Pane" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="621.0" fitWidth="862.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/The_Parthenon_in_Athens.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#fffb00" layoutX="35.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A large Persian force is on the way towards Athens. What is your battle plan commander??" textAlignment="JUSTIFY" wrappingWidth="711.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="156.0" fitWidth="251.0" layoutX="35.0" layoutY="424.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/40.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="156.0" fitWidth="143.0" layoutX="35.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/41.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="156.0" fitWidth="272.0" layoutX="35.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/42.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="RED" layoutX="290.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Build walls and prepare for a siege." wrappingWidth="401.771484375">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="190.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Send messengers to other Greeck cities asking to form a defencive coalition." wrappingWidth="401.771484375">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="250.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surrender and hope that king Darius forgives Athens.">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button layoutX="706.0" layoutY="77.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="706.0" layoutY="258.0" mnemonicParsing="false" text="Button" />
+            <Button fx:id="options1Button" layoutX="706.0" layoutY="423.0" mnemonicParsing="false" onAction="#buttonMethod" text="Button" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="persianArrival" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="835.0" fitWidth="924.0" layoutX="-7.0" layoutY="-148.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/43.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#ff1500" layoutX="33.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Persian force has arrived. After capturing and burning Eretria they have landed on the plain of Marathon near Athens." textAlignment="JUSTIFY" wrappingWidth="569.2861328125">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="persianArrivalButton" layoutX="576.0" layoutY="523.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="43.0" prefWidth="98.0" text="Continue" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="battlefieldsPane" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="1625.0" fitWidth="1154.0" layoutX="-353.0" layoutY="-803.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/44.png" />
+               </image>
+            </ImageView>
+            <Circle fill="#f50000" layoutX="269.0" layoutY="300.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#f50000" layoutX="206.0" layoutY="300.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#f50000" layoutX="152.0" layoutY="371.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+            <Text layoutX="275.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marathon">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="135.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="mountainous terrain">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="121.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Persian force has landed at the Marathon plain. Soon they will march towards Athens. Where do you want to fight them? Choose a terrain that will benefit your troops and not theirs." textAlignment="JUSTIFY" wrappingWidth="581.13671875">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9dbedd" height="174.0" layoutX="400.0" layoutY="421.0" stroke="BLACK" strokeType="INSIDE" width="395.0" />
+            <Button fx:id="chooseMarathonButton" layoutX="429.0" layoutY="442.0" mnemonicParsing="false" onAction="#buttonMethod" text="Choose Marathon plain" />
+            <Button layoutX="429.0" layoutY="490.0" mnemonicParsing="false" text="Choose mountainous terrain" />
+            <Button layoutX="429.0" layoutY="539.0" mnemonicParsing="false" text="Choose Athens plain" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
