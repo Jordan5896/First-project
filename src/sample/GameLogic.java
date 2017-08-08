@@ -19,16 +19,19 @@ import java.util.TimerTask;
 public class GameLogic {
 
     Controller c = new Controller();
+    GameDatabase d = new GameDatabase(c);
     Sound s = new Sound();
     private static final MediaPlayer START_AUDIO = null;
     //I used static because currentAudio became null every time because
     //g GameLogic would create a new instance every time I clicked a button
     // and I need to save the value of currentAudio
     private static MediaPlayer currentAudio = null;
+    public static int playerScore = 100;
 
     public GameLogic(Controller c) {
         this.c = c;
     }
+
 
 
 
@@ -281,6 +284,11 @@ public void formationAnimation(Rectangle rect){
     public void triumphFunction(){
         c.getAftermath2Pane().setVisible(false);
         c.getTriumphPane().setVisible(true);
+        c.getScoreText().setVisible(true);
+        c.getScoreText().setText("" +playerScore);
+        d.saveToDatabase();
+
+
     }
     public void playAgainFunction(){
         c.getTriumphPane().setVisible(false);

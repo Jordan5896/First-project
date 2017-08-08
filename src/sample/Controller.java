@@ -13,6 +13,7 @@ import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 //import javafx.scene.input.MouseEvent;
+import java.sql.*;
 
 import java.awt.event.MouseEvent;
 import java.util.Timer;
@@ -581,6 +582,8 @@ public class Controller {
     @FXML
     private Button advise7Button;
 
+    @FXML
+    private Text scoreText;
 
 
 
@@ -590,11 +593,18 @@ public class Controller {
         GameLogic g = new GameLogic(this);
         Animation a = new Animation(this);
 
+        GameDatabase d = new GameDatabase(this);
+
+        g.playerScore--;
+        System.out.println(g.playerScore);
 
         if(b.equals(startButton)){
             //startButton.setVisible(false);
             System.out.print(enterName.getText());
+
             g.startGame();
+            d.databaseFunction();
+
 
         }
         else if(b.equals(introButton)){
@@ -604,7 +614,7 @@ public class Controller {
         }
         else if(b.equals(ionianButton)){
             g.dariusFunction();
-            System.out.print("dariusbutton");
+            System.out.print(enterName.getText());
         }
         else if(b.equals(dariusVowButton)){
             g.dariusMotivesFunction();
@@ -629,9 +639,13 @@ public class Controller {
         else if(b.equals(options1Button)){
             g.persianArrivalFunction();
             System.out.print("revoltendButton");
+
         }
         else if(b.equals(options1Button2)){
             g.alliesHelpFunction();
+            System.out.println("PATHSAME TO KOUMPI!!!!");
+            g.playerScore -= 10;
+            System.out.println(g.playerScore);
         }
         else if(b.equals(alliesHelpButton)){
             g.persianArrivalFunction();
@@ -1254,6 +1268,14 @@ public class Controller {
 
     public Button getWaitArrowsButton() {
         return waitArrowsButton;
+    }
+
+    public Text getScoreText() {
+        return scoreText;
+    }
+
+    public String getEnterName() {
+        return enterName.getText();
     }
 
     @FXML
