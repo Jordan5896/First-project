@@ -13,11 +13,7 @@ import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 //import javafx.scene.input.MouseEvent;
-import java.sql.*;
 
-import java.awt.event.MouseEvent;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class Controller {
 
@@ -585,6 +581,92 @@ public class Controller {
     @FXML
     private Text scoreText;
 
+    @FXML
+    private ImageView herodotus1;
+
+    @FXML
+    private ImageView herodotus2;
+
+    @FXML
+    private ImageView herodotus3;
+
+    @FXML
+    private ImageView herodotus4;
+
+    @FXML
+    private ImageView herodotus5;
+
+    @FXML
+    private ImageView herodotus6;
+
+    @FXML
+    private ImageView herodotus7;
+
+    @FXML
+    private ImageView generalBadge;
+
+    @FXML
+    private Text badge1Text;
+
+    @FXML
+    private ImageView generalBadge2;
+
+    @FXML
+    private ImageView generalBadge3;
+
+    @FXML
+    private Button chooseGeneralButton1;
+
+    @FXML
+    private ImageView army1;
+
+    @FXML
+    private ImageView army2;
+
+    @FXML
+    private ImageView persianArmy1;
+
+    @FXML
+    private ImageView persianArmy2;
+
+    @FXML
+    private Button marathonContinueButton;
+
+    @FXML
+    private Button highScoresButton;
+
+    @FXML
+    private AnchorPane highScoresPane;
+
+    @FXML
+    private Text name1;
+
+    @FXML
+    private Text name2;
+
+    @FXML
+    private Text score1;
+
+    @FXML
+    private Text rank1;
+
+    @FXML
+    private Text rank2;
+
+    @FXML
+    private Text score2;
+
+    @FXML
+    private Text name3;
+
+    @FXML
+    private Text score3;
+
+    @FXML
+    private Text rank3;
+
+    @FXML
+    private Button playAgain2Button;
 
 
     @FXML
@@ -593,9 +675,8 @@ public class Controller {
         GameLogic g = new GameLogic(this);
         Animation a = new Animation(this);
 
-        GameDatabase d = new GameDatabase(this);
+        GameDatabase d = new GameDatabase();
 
-        g.playerScore--;
         System.out.println(g.playerScore);
 
         if(b.equals(startButton)){
@@ -603,61 +684,59 @@ public class Controller {
             System.out.print(enterName.getText());
 
             g.startGame();
-            d.databaseFunction();
+            //d.loadDatabaseFunction();
 
 
         }
         else if(b.equals(introButton)){
             g.introFunction();
+            a.army1Animation(army1);
 
-            System.out.print("introButton");
         }
         else if(b.equals(ionianButton)){
             g.dariusFunction();
-            System.out.print(enterName.getText());
         }
         else if(b.equals(dariusVowButton)){
             g.dariusMotivesFunction();
             //g.endRevoltFunction();
-            System.out.print("dariusbutton2");
         }
         else if(b.equals(dariusMotivesButton)){
             g.endRevoltFunction();
         }
         else if(b.equals(revoltEndButton)){
             g.agoraFunction();
-            System.out.print("revoltendButton");
         }
         else if(b.equals(agoraButton)){
             g.chooseGeneralFunction();
-            System.out.print("revoltendButton");
         }
         else if(b.equals(chooseGeneralButton)){
             g.optionsPaneFunction();
-            System.out.print("revoltendButton");
+        }
+        else if(b.equals(chooseGeneralButton1)){
+            g.optionsPaneFunction();
         }
         else if(b.equals(options1Button)){
             g.persianArrivalFunction();
-            System.out.print("revoltendButton");
-
         }
         else if(b.equals(options1Button2)){
             g.alliesHelpFunction();
-            System.out.println("PATHSAME TO KOUMPI!!!!");
-            g.playerScore -= 10;
-            System.out.println(g.playerScore);
         }
         else if(b.equals(alliesHelpButton)){
             g.persianArrivalFunction();
+            a.army2Animation(persianArmy1);
         }
         else if(b.equals(persianArrivalButton)){
             g.chooseBattlefieldFunction();
-            System.out.print("revoltendButton");
         }
         else if(b.equals(chooseMarathonButton)){
-            g.battleChaosFunction();
-            System.out.print("revoltendButton");
+            g.swapButtonsFunction();
+            g.army3Animation(army2);
+
         }
+        else if(b.equals(marathonContinueButton)){
+            g.battleChaosFunction();
+        }
+
         else if(b.equals(battleChaosButton)){
             g.chooseFormationFunction();
             g.arrowsAnimationFunction(leftArrow);
@@ -714,7 +793,6 @@ public class Controller {
             a.explosionFunction(e12);
             a.explosionFunction(e13);
             a.explosionFunction(e14);
-            System.out.print("revoltendButton");
         }
 
         else if(b.equals(dashButton)){
@@ -832,12 +910,6 @@ public class Controller {
             a.greekRightAdvance(gr3);
 
             a.persianCavalryRetreat(persianCavalryElipse);
-
-
-
-
-
-
         }
 
         else if(b.equals(battle2Button)){
@@ -864,57 +936,103 @@ public class Controller {
         }
         else if(b.equals(options1Button1)){
             g.advise1Function();
+            a.herodotusFunction(herodotus1);
+            g.playerScore -= 10;
+
         }
         else if(b.equals(options1Button3)){
             g.advise1Function();
+            a.herodotusFunction(herodotus1);
+
+            g.playerScore -= 10;
+
         }
         else if(b.equals(advise1Button)){
             g.returnOptions1Function();
         }
         else if(b.equals(chooseMountainsButton)){
             g.advise2Function();
+            a.herodotusFunction(herodotus2);
+
+            g.playerScore -= 10;
+
         }
         else if(b.equals(chooseAthensButton)){
             g.advise2Function();
+            a.herodotusFunction(herodotus2);
+
+            g.playerScore -= 10;
+
         }
         else if(b.equals(advise2Button)){
             g.returnBattlefieldsPaneFunction();
         }
         else if(b.equals(standardFormationButton)){
             g.advise3Function();
+            a.herodotusFunction(herodotus3);
+
+            g.playerScore -= 10;
+
         }
         else if(b.equals(advise3Button)){
             g.returnChooseFormationFunction();
         }
         else if(b.equals(waitArrowsButton)){
             g.advise4Function();
+            a.herodotusFunction(herodotus4);
+
+            g.playerScore -= 10;
+
         }
         else if(b.equals(advise4Button)){
             g.returnBattlePane4();
         }
         else if(b.equals(pressForwardButton)){
             g.advise5Function();
+            a.herodotusFunction(herodotus5);
+
+            g.playerScore -= 10;
+
         }
         else if(b.equals(advise5Button)){
             g.returnBattlePane5();
         }
         else if(b.equals(holdTheLineButton)){
             g.advise6Function();
+            a.herodotusFunction(herodotus6);
+
+            g.playerScore -= 10;
+
         }
         else if(b.equals(pressForward2Button)){
             g.advise6Function();
+            a.herodotusFunction(herodotus6);
+
+            g.playerScore -= 10;
+
         }
         else if(b.equals(advise6Button)){
             g.returnBattlePane6();
         }
         else if(b.equals(retreatCenterButton)){
             g.advise7Function();
+            a.herodotusFunction(herodotus7);
+
+            g.playerScore -= 10;
+
         }
         else if(b.equals(advise7Button)){
             g.returnBattlePane7();
         }
 
+        else if(b.equals(highScoresButton)){
+            g.highScoreFunction();
+        }
 
+        else if(b.equals(playAgain2Button)){
+            g.startGame();
+            highScoresPane.setVisible(false);
+        }
 
 
     }
@@ -1278,13 +1396,79 @@ public class Controller {
         return enterName.getText();
     }
 
-    @FXML
-    private Text status;
+    public Text getBadge1Text() {
+        return badge1Text;
+    }
 
-    @FXML
-    private void displayPosition (MouseEvent event){
-        status.setText("X = " + event.getX() + "Y = " + event.getY());
-        status.isVisible();
+    public ImageView getGeneralBadge() {
+        return generalBadge;
+    }
 
+    public ImageView getGeneralBadge2() {
+        return generalBadge2;
+    }
+
+    public ImageView getGeneralBadge3() {
+        return generalBadge3;
+    }
+
+    public Button getMarathonContinueButton() {
+        return marathonContinueButton;
+    }
+
+    public Button getChooseMarathonButton() {
+        return chooseMarathonButton;
+    }
+
+    public Button getChooseMountainsButton() {
+        return chooseMountainsButton;
+    }
+
+    public Button getChooseAthensButton() {
+        return chooseAthensButton;
+    }
+
+    public ImageView getArmy2() {
+        return army2;
+    }
+
+    public AnchorPane getHighScoresPane() {
+        return highScoresPane;
+    }
+
+    public Text getName1() {
+        return name1;
+    }
+
+    public Text getName2() {
+        return name2;
+    }
+
+    public Text getScore1() {
+        return score1;
+    }
+
+    public Text getRank1() {
+        return rank1;
+    }
+
+    public Text getRank2() {
+        return rank2;
+    }
+
+    public Text getScore2() {
+        return score2;
+    }
+
+    public Text getName3() {
+        return name3;
+    }
+
+    public Text getScore3() {
+        return score3;
+    }
+
+    public Text getRank3() {
+        return rank3;
     }
 }

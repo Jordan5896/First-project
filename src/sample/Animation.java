@@ -796,6 +796,52 @@ public class Animation {
 
     }
 
+    public void herodotusFunction(Node herodotus){
+        Node herodotusAnimation = herodotus;
+        herodotusAnimation.setVisible(true);
+         FadeTransition ft = new FadeTransition(Duration.millis(7000), herodotus);
+
+        ft.setFromValue(0.0);
+        ft.setToValue(1.0);
+        ft.setCycleCount(1);
+        ft.setAutoReverse(true);
+        ft.play();
+    }
+
+    public void army1Animation(Node imageGiven){
+        imageGiven.setVisible(true);
+        Line line = new Line();
+        line.setStartX(35);
+        line.setEndX(260);
+        line.setStartY(11);
+        line.setEndY(0);
+        PathTransition t = new PathTransition();
+        t.setNode(imageGiven);
+        t.setDuration(Duration.seconds(8));
+        t.setPath(line);
+        t.setCycleCount(1);
+        t.play();
+
+    }
+
+    public void army2Animation(Node imageGiven){
+        imageGiven.setVisible(true);
+        Line line = new Line();
+        line.setStartX(0);
+        line.setEndX(-400);
+        line.setStartY(0);
+        line.setEndY(-150);
+        PathTransition t = new PathTransition();
+        t.setNode(imageGiven);
+        t.setDuration(Duration.seconds(8));
+        t.setPath(line);
+        t.setCycleCount(1);
+        t.play();
+    }
+
+
+
+
 
 
 

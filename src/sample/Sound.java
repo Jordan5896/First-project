@@ -17,12 +17,14 @@ public class Sound {
         String backgroundMusic = "src/Audio/epicMusic.mp3";
         Media hit = new Media(new File(backgroundMusic).toURI().toString());
         mediaPlayer = new MediaPlayer(hit);
+
+
         mediaPlayer.setOnEndOfMedia(new Runnable() {
             public void run() {
                 mediaPlayer.seek(Duration.ZERO);
             }
         });
-       // mediaPlayer.setVolume(10);
+        mediaPlayer.setVolume(0.3);
         mediaPlayer.play();
     }
 

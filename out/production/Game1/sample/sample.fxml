@@ -14,17 +14,17 @@
 
 <AnchorPane fx:id="pane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <ImageView fx:id="image1" fitHeight="600.0" fitWidth="917.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="image1" fitHeight="637.0" fitWidth="819.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../pictures/hq1.png" />
          </image>
       </ImageView>
-      <Label fx:id="tittleLabel" layoutX="261.0" layoutY="101.0" text="History is Fun!" textAlignment="JUSTIFY" textFill="RED">
+      <Label fx:id="tittleLabel" layoutX="227.0" text="History is Fun!" textAlignment="JUSTIFY" textFill="RED">
          <font>
-            <Font size="48.0" />
+            <Font size="64.0" />
          </font>
       </Label>
-      <Label fx:id="marathonLabel" layoutX="238.0" layoutY="182.0" text="The battle of Marathon" textFill="RED">
+      <Label fx:id="marathonLabel" layoutX="237.0" layoutY="138.0" text="The battle of Marathon" textFill="RED">
          <font>
             <Font size="36.0" />
          </font>
@@ -33,77 +33,83 @@
       <Button fx:id="startButton" layoutX="374.0" layoutY="382.0" mnemonicParsing="false" onAction="#buttonMethod" text="Start Game" />
       <AnchorPane fx:id="introPane" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ImageView fitHeight="600.0" fitWidth="815.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="620.0" fitWidth="819.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../pictures/hq2.jpg" />
                </image>
             </ImageView>
-            <Text fill="#ffd200" layoutX="138.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Battle of Marathon (Greek: Μάχη τοῦ Μαραθῶνος, Machē tou Marathōnos) took place in 490 BC, during the first Persian invasion of Greece. It was fought between the citizens of Athens, aided by Plataea, and a Persian force commanded by Datis and Artaphernes. The battle was the culmination of the first attempt by Persia, under King Darius I, to subjugate Greece. The Greek army decisively defeated the more numerous Persians, marking a turning point in the Greco-Persian Wars." textAlignment="JUSTIFY" wrappingWidth="494.13671875">
+            <Button fx:id="introButton" layoutX="666.0" layoutY="511.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="37.0" prefWidth="82.0" text="Continue" />
+            <TextArea layoutX="30.0" layoutY="382.0" prefHeight="182.0" prefWidth="623.0" />
+            <Text layoutX="40.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Battle of Marathon took place in 490 BC, during the first Persian invasion of Greece. It was fought between the citizens of Athens, aided by Plataea, and a Persian force commanded by Datis and Artaphernes. The battle was the culmination of the first attempt by Persia, under King Darius I, to subjugate Greece. The Greek army decisively defeated the more numerous Persians, marking a turning point in the Greco-Persian Wars." wrappingWidth="581.13671875">
                <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
-            </Text>
-            <Button fx:id="introButton" layoutX="615.0" layoutY="480.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="37.0" prefWidth="82.0" text="Continue" />
+                  <Font size="18.0" />
+               </font></Text>
          </children>
       </AnchorPane>
       <AnchorPane fx:id="ionianRevoltPane" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ImageView fitHeight="606.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="614.0" fitWidth="811.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../pictures/hq4.jpg" />
                </image>
             </ImageView>
-            <Text layoutX="14.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The first Persian invasion was a response to Athenian involvement in the Ionian Revolt, when Athens and Eretria had sent a force to support the cities of Ionia in their attempt to overthrow Persian rule. The Athenians and Eretrians had succeeded in capturing and burning Sardis, but they were then forced to retreat with heavy losses. In response to this raid, Darius swore to burn down Athens and Eretria." textAlignment="JUSTIFY" wrappingWidth="757.13671875">
+            <Text layoutX="14.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The first Persian invasion was a response to Athenian involvement in the Ionian Revolt, when Athens and Eretria had sent a force to support the Greek cities of Ionia in their attempt to overthrow Persian rule. The Athenians and Eretrians had succeeded in capturing and burning Sardis, but they were then forced to retreat with heavy losses. In response to this raid, Darius swore to burn down Athens and Eretria." textAlignment="JUSTIFY" wrappingWidth="757.13671875">
                <font>
-                  <Font size="18.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Text>
             <Button fx:id="ionianButton" layoutX="662.0" layoutY="409.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="37.0" prefWidth="91.0" text="Continue" />
+            <ImageView fx:id="army1" fitHeight="43.0" fitWidth="74.0" layoutX="187.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/29.jpg" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
       <AnchorPane fx:id="dariusVow" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ImageView fitHeight="612.0" fitWidth="1146.0" layoutX="-4.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="621.0" fitWidth="1161.0" layoutX="-4.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../pictures/hq6.jpg" />
                </image>
             </ImageView>
-            <Text layoutX="40.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" According to Herodotus, Darius asked for his bow, he placed an arrow upon the string and he discharged it upwards towards heaven, and as he shot into the air he said: &quot;Zeus, grant me to take vengeance upon the Athenians!&quot;, and vowed to burn Eretria and Athens to the ground. Also he charged one of his servants, to say &quot;Master, remember the Athenians.&quot; three times before dinner each day." textAlignment="JUSTIFY" wrappingWidth="593.13671875">
+            <TextArea layoutX="40.0" layoutY="448.0" prefHeight="133.0" prefWidth="609.0" />
+            <Button fx:id="dariusVowButton" layoutX="656.0" layoutY="494.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="37.0" prefWidth="98.0" text="Continue" />
+            <Text layoutX="48.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="According to Herodotus, Darius asked for his bow, fired an arrow towards the heavens, asking the gods to grant him vengeance upon the Athenians,  and vowed to burn Eretria and Athens to the ground. Also he charged one of his servants, to say &quot;Master, remember the Athenians.&quot; three times before dinner each day." wrappingWidth="594.0">
                <font>
-                  <Font size="18.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Text>
-            <Button fx:id="dariusVowButton" layoutX="656.0" layoutY="494.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="37.0" prefWidth="98.0" text="Continue" />
          </children>
       </AnchorPane>
       <AnchorPane fx:id="revoltEndPane" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ImageView fitHeight="600.0" fitWidth="817.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="616.0" fitWidth="819.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../pictures/hq8.jpg" />
                </image>
             </ImageView>
-            <Text layoutX="75.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Once the Ionian revolt was finally crushed by the Persian victory at the Battle of Lade in 494 BC, Darius began plans to conquer Greece. In 490 BC, he sent a naval task force under Datis and Artaphernes across the Aegean, to subjugate the Greeck islands, and then  attack  Athens and Eretria" textAlignment="JUSTIFY" wrappingWidth="401.771484375">
+            <Text layoutX="70.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Once the Ionian revolt was finally crushed by the Persians, Darius began plans to conquer Greece. In 490 BC, he sent a naval task force under Datis and Artaphernes across the Aegean, to subjugate the Greeck islands, and then  attack  Athens and Eretria" textAlignment="JUSTIFY" wrappingWidth="569.2861328125">
                <font>
-                  <Font size="18.0" />
+                  <Font name="System Bold" size="22.0" />
                </font>
             </Text>
-            <Button fx:id="revoltEndButton" layoutX="588.0" layoutY="445.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="53.0" prefWidth="98.0" text="Continue" />
+            <Button fx:id="revoltEndButton" layoutX="669.0" layoutY="445.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="53.0" prefWidth="98.0" text="Continue" />
          </children>
       </AnchorPane>
       <AnchorPane fx:id="agoraPane" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ImageView fitHeight="608.0" fitWidth="801.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="613.0" fitWidth="819.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../pictures/33.jpeg" />
                </image>
             </ImageView>
-            <Text fill="#da0000" layoutX="32.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Athens constitution is a Democracy where the citizens vote in the Agora (public square). News of their Ionian allies defeat has reached the Athenians. Terrified they learn that Darius has send a large military force to burn Athens to the ground and enslave the population. They have voted for YOU to be in charge of Athens defence. Victory means freedom, defeat means death and slavery." textAlignment="JUSTIFY" wrappingWidth="736.13671875">
+            <TextArea layoutX="25.0" layoutY="394.0" prefHeight="129.0" prefWidth="757.0" />
+            <Button fx:id="agoraButton" layoutX="582.0" layoutY="513.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="37.0" prefWidth="98.0" text="Continue" />
+            <Text layoutX="39.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Athens constitution is a Democracy where the citizens vote in the Agora (public square). News of their Ionian allies defeat has reached the Athenians. Terrified they learn that Darius has send a large military force to burn Athens to the ground and enslave the population. They have voted for YOU to be in charge of Athens defence. Victory means freedom, defeat means death and slavery." wrappingWidth="729.0">
                <font>
                   <Font size="18.0" />
-               </font>
-            </Text>
-            <Button fx:id="agoraButton" layoutX="582.0" layoutY="513.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="37.0" prefWidth="98.0" text="Continue" />
+               </font></Text>
          </children>
       </AnchorPane>
       <AnchorPane fx:id="chooseGeneralPane" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -115,32 +121,28 @@
             </ImageView>
             <ImageView fitHeight="621.0" fitWidth="478.0" layoutX="355.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../pictures/34.jpg" />
+                  <Image url="@../pictures/female.jpg" />
                </image>
             </ImageView>
-            <Text fill="#e5ff00" layoutX="343.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="general!">
+            <Button fx:id="chooseGeneralButton" layoutX="687.0" layoutY="516.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="43.0" prefWidth="98.0" text="Select" />
+            <Button fx:id="chooseGeneralButton1" layoutX="22.0" layoutY="516.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="43.0" prefWidth="98.0" text="Select" />
+            <Text fill="#fffb00" layoutX="229.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose your general!" wrappingWidth="410.0">
                <font>
-                  <Font size="32.0" />
+                  <Font size="36.0" />
                </font>
             </Text>
-            <Text fill="#fffb00" layoutX="152.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose your" wrappingWidth="179.13671875">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Text>
-            <Button fx:id="chooseGeneralButton" layoutX="687.0" layoutY="516.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="43.0" prefWidth="98.0" text="Continue" />
          </children>
       </AnchorPane>
       <AnchorPane fx:id="options1Pane" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ImageView fitHeight="621.0" fitWidth="862.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="616.0" fitWidth="874.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../pictures/The_Parthenon_in_Athens.jpg" />
                </image>
             </ImageView>
-            <Text fill="#fffb00" layoutX="35.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A large Persian force is on the way towards Athens. What is your battle plan commander??" textAlignment="JUSTIFY" wrappingWidth="711.13671875">
+            <Text fill="#f3ff00" layoutX="35.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A large Persian force is on the way towards Athens. What is your battle plan commander??" textAlignment="JUSTIFY" wrappingWidth="711.13671875">
                <font>
-                  <Font size="18.0" />
+                  <Font name="System Bold" size="22.0" />
                </font>
             </Text>
             <ImageView fitHeight="156.0" fitWidth="251.0" layoutX="35.0" layoutY="424.0" pickOnBounds="true" preserveRatio="true">
@@ -158,24 +160,24 @@
                   <Image url="@../pictures/42.jpg" />
                </image>
             </ImageView>
-            <Text fill="RED" layoutX="290.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Build walls and prepare for a siege." wrappingWidth="401.771484375">
+            <Text fill="RED" layoutX="289.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Build walls and prepare for a siege." wrappingWidth="401.771484375">
                <font>
-                  <Font size="18.0" />
+                  <Font name="System Bold" size="22.0" />
                </font>
             </Text>
-            <Text fill="RED" layoutX="190.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Send messengers to other Greeck cities asking to form a defencive coalition." wrappingWidth="401.771484375">
+            <Text fill="RED" layoutX="183.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Send messengers to other Greeck cities asking to form a defencive coalition." wrappingWidth="507.771484375">
                <font>
-                  <Font size="18.0" />
+                  <Font name="System Bold" size="22.0" />
                </font>
             </Text>
-            <Text fill="RED" layoutX="250.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surrender and hope that king Darius forgives Athens.">
+            <Text fill="RED" layoutX="250.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surrender and hope that king Darius forgives Athens." wrappingWidth="434.0">
                <font>
-                  <Font size="18.0" />
+                  <Font name="System Bold" size="22.0" />
                </font>
             </Text>
             <Button fx:id="options1Button3" layoutX="706.0" layoutY="77.0" mnemonicParsing="false" onAction="#buttonMethod" text="Select" />
             <Button fx:id="options1Button2" layoutX="706.0" layoutY="258.0" mnemonicParsing="false" onAction="#buttonMethod" text="Select" />
-            <Button fx:id="options1Button1" layoutX="706.0" layoutY="423.0" mnemonicParsing="false" onAction="#buttonMethod" text="Select" />
+            <Button fx:id="options1Button1" layoutX="706.0" layoutY="435.0" mnemonicParsing="false" onAction="#buttonMethod" text="Select" />
          </children>
       </AnchorPane>
       <AnchorPane fx:id="persianArrival" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -185,17 +187,22 @@
                   <Image url="@../pictures/43.jpg" />
                </image>
             </ImageView>
-            <Text fill="#ff1500" layoutX="33.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Persian force has arrived. After capturing and burning Eretria they have landed on the plain of Marathon near Athens." textAlignment="JUSTIFY" wrappingWidth="569.2861328125">
+            <Text fill="#ff1500" layoutX="36.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Persian force has arrived. After capturing and burning Eretria they have landed on the plain of Marathon near Athens." textAlignment="JUSTIFY" wrappingWidth="729.0">
                <font>
-                  <Font size="18.0" />
+                  <Font name="System Bold" size="24.0" />
                </font>
             </Text>
             <Button fx:id="persianArrivalButton" layoutX="576.0" layoutY="523.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="43.0" prefWidth="98.0" text="Continue" />
+            <ImageView fx:id="persianArmy1" fitHeight="37.0" fitWidth="60.0" layoutX="736.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/chariot.jpg" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
       <AnchorPane fx:id="battlefieldsPane" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ImageView fitHeight="1625.0" fitWidth="1154.0" layoutX="-353.0" layoutY="-803.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="1415.0" fitWidth="1167.0" layoutX="-353.0" layoutY="-803.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../pictures/44.png" />
                </image>
@@ -213,35 +220,46 @@
                   <Font size="14.0" />
                </font>
             </Text>
-            <Text layoutX="121.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Persian force has landed at the Marathon plain. Soon they will march towards Athens. Where do you want to fight them? Choose a terrain that will benefit your troops and not theirs." textAlignment="JUSTIFY" wrappingWidth="581.13671875">
+            <Text layoutX="471.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Persian force has landed at  Marathon plain. Soon they will march towards Athens. Where do you want to fight them? Choose a terrain that will benefit your troops and not theirs." textAlignment="JUSTIFY" wrappingWidth="291.13671875">
                <font>
-                  <Font name="System Bold" size="18.0" />
+                  <Font name="System Bold" size="22.0" />
                </font>
             </Text>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9dbedd" height="174.0" layoutX="400.0" layoutY="421.0" stroke="BLACK" strokeType="INSIDE" width="395.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9dbedd" height="192.0" layoutX="400.0" layoutY="421.0" stroke="BLACK" strokeType="INSIDE" width="410.0" />
             <Button fx:id="chooseMarathonButton" layoutX="429.0" layoutY="442.0" mnemonicParsing="false" onAction="#buttonMethod" text="Choose Marathon plain" />
             <Button fx:id="chooseMountainsButton" layoutX="429.0" layoutY="490.0" mnemonicParsing="false" onAction="#buttonMethod" text="Choose mountainous terrain" />
             <Button fx:id="chooseAthensButton" layoutX="429.0" layoutY="539.0" mnemonicParsing="false" onAction="#buttonMethod" text="Choose Athens plain" />
+            <ImageView fx:id="army2" fitHeight="36.0" fitWidth="43.0" layoutX="109.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../pictures/29.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="persianArmy2" fitHeight="43.0" fitWidth="104.0" layoutX="235.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/images13.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="marathonContinueButton" layoutX="571.0" layoutY="494.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="43.0" prefWidth="91.0" text="Continue" visible="false" />
          </children>
       </AnchorPane>
       <AnchorPane fx:id="battleChaosPane" layoutX="138.0" layoutY="200.0" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ImageView fitHeight="614.0" fitWidth="849.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="616.0" fitWidth="856.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../pictures/47.jpg" />
                </image>
             </ImageView>
-            <Text layoutX="32.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In ancient battles communication was very hard! Chaos followed when the two armies collided." wrappingWidth="746.13671875">
+            <Text layoutX="27.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In ancient battles communication was very hard! Chaos followed when the two armies collided." wrappingWidth="746.13671875">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Text>
-            <Text layoutX="32.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To remain organised, good generals issued orders to their commanders and troops before the battle." wrappingWidth="736.13671875">
+            <Text layoutX="27.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To remain organised, good generals issued orders to their commanders and troops before the battle." wrappingWidth="736.13671875">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Text>
-            <Text layoutX="36.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Also, the generals were responcible for army's formation. A good formation means victory, a bad formation means defeat." wrappingWidth="729.0">
+            <Text fill="WHITE" layoutX="36.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Also, the generals were responcible for the army's formation. A good formation means victory, a bad formation means defeat." wrappingWidth="729.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
@@ -502,7 +520,7 @@
                   <Font size="18.0" />
                </font>
             </TextArea>
-            <Text fx:id="cavalryText" layoutX="195.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The two armies have now clashed. The Persian cavalry attemts to out-flank the Athenian phalanx from a narrow gap. What is your next move commandeer?" visible="false" wrappingWidth="380.13671875">
+            <Text fx:id="cavalryText" layoutX="195.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The two armies have now clashed. The Persian cavalry attemts to out-flank the Athenian phalanx from a narrow gap. What is your next move commander?" visible="false" wrappingWidth="380.13671875">
                <font>
                   <Font size="18.0" />
                </font>
@@ -691,40 +709,40 @@
       </AnchorPane>
       <AnchorPane fx:id="endOfBattlePane" layoutX="129.0" layoutY="175.0" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ImageView fitHeight="690.0" fitWidth="828.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="693.0" fitWidth="817.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../pictures/GreeceBattleMarathon1.jpg" />
                </image>
             </ImageView>
             <Text layoutX="39.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="After fierce fighting the Persians retreat to their ships. The Athenians have won!" wrappingWidth="699.771484375">
                <font>
-                  <Font name="System Bold" size="18.0" />
+                  <Font name="System Bold" size="24.0" />
                </font>
             </Text>
             <Text layoutX="25.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Persians now sail towards the undefended city of Athens seeking for revenge. There is no time for the Athenian army to celebrate as they march with haste to defend Athens and their families" wrappingWidth="757.13671875">
                <font>
-                  <Font name="System Bold" size="18.0" />
+                  <Font name="System Bold" size="24.0" />
                </font>
             </Text>
             <Button fx:id="endOfBattleButton" layoutX="662.0" layoutY="518.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="43.0" prefWidth="98.0" text="Continue" />
          </children></AnchorPane>
       <AnchorPane fx:id="pheidepedesPane" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ImageView fitHeight="652.0" fitWidth="1161.0" layoutX="-161.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="616.0" fitWidth="1170.0" layoutX="-161.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../pictures/Pheidippides_LG.jpg" />
                </image></ImageView>
-            <Text layoutX="32.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Athenians ordered their fastest soldier to anounce the victory to Athens whose citizens were desperately awaiting their fate." wrappingWidth="768.13671875">
+            <Text fill="WHITE" layoutX="32.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Athenians ordered their fastest soldier to anounce the victory to Athens whose citizens were desperately awaiting their fate." wrappingWidth="768.13671875">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Text>
-            <Text layoutX="32.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The soldier's name was Pheidepedes and run the distance from Marathon to Athens. Upon entering the city he cried out &quot;Rejoice, we have won!&quot; and collapsed dead from exhaustion as he was eager to anounce the important news." wrappingWidth="768.13671875">
+            <Text fill="WHITE" layoutX="32.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The soldier's name was Pheidepedes and run the distance from Marathon to Athens. Upon entering the city he cried out &quot;Rejoice, we have won!&quot; and collapsed dead from exhaustion as he was eager to anounce the important news." wrappingWidth="768.13671875">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Text>
-            <Text layoutX="32.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Marathon race of today's Olympic Games is dedicated to his honour." wrappingWidth="757.13671875">
+            <Text fill="WHITE" layoutX="32.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Marathon race of today's Olympic Games is dedicated to his honour." wrappingWidth="757.13671875">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
@@ -734,7 +752,7 @@
       </AnchorPane>
       <AnchorPane fx:id="aftermathPane" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ImageView fitHeight="606.0" fitWidth="878.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="613.0" fitWidth="817.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../pictures/athens2.jpg" />
                </image>
@@ -747,7 +765,7 @@
          </children></AnchorPane>
       <AnchorPane fx:id="aftermath2Pane" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ImageView fitHeight="606.0" fitWidth="819.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="613.0" fitWidth="828.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../pictures/acropolis2.jpg" />
                </image>
@@ -770,33 +788,53 @@
       </AnchorPane>
       <AnchorPane fx:id="triumphPane" layoutX="181.0" layoutY="88.0" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ImageView fitHeight="614.0" fitWidth="808.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="613.0" fitWidth="828.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../pictures/triumph2.jpg" />
                </image>
             </ImageView>
-            <Text layoutX="48.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Congratulations on your Victory! You now recieve the rank of:" wrappingWidth="729.0">
+            <Text fill="WHITE" layoutX="48.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Congratulations on your Victory! You now recieve the rank of:" wrappingWidth="729.0">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font></Text>
-            <Text layoutX="48.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your score is:" wrappingWidth="301.0">
+            <Text fill="WHITE" layoutX="48.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your score is:" wrappingWidth="301.0">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>
             </Text>
-            <Button fx:id="highScoresButton" layoutX="349.0" layoutY="469.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="98.0" text="High scores" />
+            <Button fx:id="highScoresButton" layoutX="349.0" layoutY="469.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="53.0" prefWidth="98.0" text="High scores" />
             <Button fx:id="exitButton" layoutX="121.0" layoutY="469.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="53.0" prefWidth="98.0" text="Exit " />
             <Button fx:id="playAgainButton" layoutX="591.0" layoutY="469.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="53.0" prefWidth="98.0" text="Play again" />
-            <Text fx:id="scoreText" layoutX="326.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false">
+            <Text fx:id="scoreText" fill="WHITE" layoutX="300.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>
             </Text>
+            <ImageView fx:id="generalBadge" fitHeight="150.0" fitWidth="200.0" layoutX="35.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../pictures/29.jpg" />
+               </image>
+            </ImageView>
+            <Text fx:id="badge1Text" fill="WHITE" layoutX="226.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="generalBadge2" fitHeight="150.0" fitWidth="200.0" layoutX="21.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../pictures/images13.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="generalBadge3" fitHeight="150.0" fitWidth="200.0" layoutX="21.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../pictures/39.jpg" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
       <AnchorPane fx:id="dariusMotivesPane" layoutX="124.0" layoutY="157.0" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ImageView fitHeight="608.0" fitWidth="849.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="613.0" fitWidth="817.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../pictures/darius3.jpg" />
                </image>
@@ -823,9 +861,9 @@
                   <Image url="@../pictures/51.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="herodotos1Image" fitHeight="379.0" fitWidth="487.0" layoutX="282.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="herodotus1" fitHeight="379.0" fitWidth="487.0" layoutX="282.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../pictures/protomi3.png" />
+                  <Image url="@../pictures/protomi5.png" />
                </image>
             </ImageView>
             <Text fx:id="herodotus1Text" layoutX="97.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="King Darius is furious and not likely to forgive the Athenians. Also, you may not build large enough city walls in time. My advise is that you call for help from other Greek cities." wrappingWidth="623.0">
@@ -845,7 +883,7 @@
             </ImageView>
             <ImageView fx:id="herodotus2" fitHeight="348.0" fitWidth="441.0" layoutX="273.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../pictures/protomi3.png" />
+                  <Image url="@../pictures/protomi5.png" />
                </image>
             </ImageView>
             <Text fx:id="herodotus2Text" layoutX="89.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Greek heavily armoured hoplites cannot deploy a phalanx formation in mountainous terrain and will lose their advantage. Athens has a very large plain where both armies can be fully deployed.  The plain of Marathon is surrounded by marshes, we can use that in our advantage so that the Persian cavalry cannot out-flank the Greek phalanx." wrappingWidth="623.0">
@@ -1037,7 +1075,7 @@
       </AnchorPane>
       <AnchorPane fx:id="alliesHelpPane" layoutX="20.0" layoutY="20.0" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ImageView fitHeight="608.0" fitWidth="808.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="613.0" fitWidth="828.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../pictures/plateans.jpg" />
                </image>
@@ -1063,6 +1101,66 @@
                   <Font size="24.0" />
                </font>
             </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="highScoresPane" layoutX="149.0" layoutY="133.0" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="652.0" fitWidth="856.0" layoutX="-7.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/51.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="194.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="High Sores and Rank" textAlignment="CENTER" wrappingWidth="388.0">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text layoutX="137.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME" wrappingWidth="70.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="338.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RANK" wrappingWidth="70.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="547.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCORE" wrappingWidth="91.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="name1" layoutX="149.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="rank1" layoutX="362.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="score1" layoutX="571.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="name2" layoutX="149.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="rank2" layoutX="362.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="score2" layoutX="571.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="name3" layoutX="149.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="rank3" layoutX="362.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="score3" layoutX="571.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Button fx:id="playAgain2Button" layoutX="622.0" layoutY="478.0" mnemonicParsing="false" onAction="#buttonMethod" text="Button" />
+            <!--<Text fx:id="name2" layoutX="149.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
+            <!--<Text fx:id="rank2" layoutX="362.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
+            <!--<Text fx:id="score2" layoutX="571.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
+            <!--<Text fx:id="name2" layoutX="149.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
+            <!--<Text fx:id="rank2" layoutX="362.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
+            <!--<Text fx:id="score2" layoutX="571.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
+            <!--<Text fx:id="name2" layoutX="149.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
+            <!--<Text fx:id="rank2" layoutX="362.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
+            <!--<Text fx:id="score2" layoutX="571.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
+            <!--<Text fx:id="name2" layoutX="149.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
+            <!--<Text fx:id="rank2" layoutX="362.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
+            <!--<Text fx:id="score2" layoutX="571.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
+            <!--<Text fx:id="name2" layoutX="149.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
+            <!--<Text fx:id="rank2" layoutX="362.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
+            <!--<Text fx:id="score2" layoutX="571.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
+            <!--<Text fx:id="name2" layoutX="149.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
+            <!--<Text fx:id="rank2" layoutX="362.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
+            <!--<Text fx:id="score2" layoutX="571.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
+            <!--<Text fx:id="name2" layoutX="149.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
+            <!--<Text fx:id="rank2" layoutX="362.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
+            <!--<Text fx:id="score2" layoutX="571.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
          </children>
       </AnchorPane>
    </children>
