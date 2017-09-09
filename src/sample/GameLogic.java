@@ -40,12 +40,17 @@ public class GameLogic {
         //c.getStartButton().setVisible(false);
         //c.getTittleLabel().setVisible(false);
         //c.getMarathonLabel().setVisible(false);
+        c.getDescriptionPane().setVisible(false);
         c.getIntroPane().setVisible(true);
         currentAudio = s.audioCommentary(START_AUDIO, "Voice00010");
         c.getGeneralBadge().setVisible(false);
         c.getGeneralBadge2().setVisible(false);
         c.getGeneralBadge3().setVisible(false);
         playerScore = 100;
+    }
+
+    public void descriptionFunction(){
+        c.getDescriptionPane().setVisible(true);
     }
 
     public void introFunction(){
@@ -366,6 +371,13 @@ public void formationAnimation(Rectangle rect){
         c.getTriumphPane().setVisible(false);
         c.getPane1().setVisible(true);
     }
+    public void returnToTriumphFunction(){
+        c.getHighScoresPane().setVisible(false);
+        c.getTriumphPane().setVisible(true);
+    }
+
+
+
     public void advise1Function(){
         c.getOptions1Pane().setVisible(false);
         c.getAdvise1Pane().setVisible(true);

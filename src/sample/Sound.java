@@ -24,7 +24,7 @@ public class Sound {
                 mediaPlayer.seek(Duration.ZERO);
             }
         });
-        mediaPlayer.setVolume(0.3);
+        mediaPlayer.setVolume(1);
         mediaPlayer.play();
     }
 

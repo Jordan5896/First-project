@@ -704,7 +704,7 @@
                   <Image url="@../pictures/explosion.png" />
                </image>
             </ImageView>
-            <Button fx:id="battle2Button" layoutX="707.0" layoutY="526.0" mnemonicParsing="false" onAction="#buttonMethod" text="Button" />
+            <Button fx:id="battle2Button" layoutX="681.0" layoutY="518.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="43.0" prefWidth="82.0" text="Continue" visible="false" />
          </children>
       </AnchorPane>
       <AnchorPane fx:id="endOfBattlePane" layoutX="129.0" layoutY="175.0" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -810,7 +810,7 @@
                   <Font name="System Bold" size="36.0" />
                </font>
             </Text>
-            <ImageView fx:id="generalBadge" fitHeight="150.0" fitWidth="200.0" layoutX="35.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <ImageView fx:id="generalBadge" fitHeight="150.0" fitWidth="200.0" layoutX="440.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true" visible="false">
                <image>
                   <Image url="@../pictures/29.jpg" />
                </image>
@@ -820,12 +820,12 @@
                   <Font name="System Bold" size="36.0" />
                </font>
             </Text>
-            <ImageView fx:id="generalBadge2" fitHeight="150.0" fitWidth="200.0" layoutX="21.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <ImageView fx:id="generalBadge2" fitHeight="150.0" fitWidth="200.0" layoutX="440.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true" visible="false">
                <image>
                   <Image url="@../pictures/images13.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="generalBadge3" fitHeight="150.0" fitWidth="200.0" layoutX="21.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <ImageView fx:id="generalBadge3" fitHeight="150.0" fitWidth="200.0" layoutX="426.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true" visible="false">
                <image>
                   <Image url="@../pictures/39.jpg" />
                </image>
@@ -1120,7 +1120,7 @@
                   <Font size="24.0" />
                </font>
             </Text>
-            <Text layoutX="338.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RANK" wrappingWidth="70.0">
+            <Text layoutX="349.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RANK" wrappingWidth="70.0">
                <font>
                   <Font size="24.0" />
                </font>
@@ -1139,28 +1139,83 @@
             <Text fx:id="name3" layoutX="149.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
             <Text fx:id="rank3" layoutX="362.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
             <Text fx:id="score3" layoutX="571.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-            <Button fx:id="playAgain2Button" layoutX="622.0" layoutY="478.0" mnemonicParsing="false" onAction="#buttonMethod" text="Button" />
-            <!--<Text fx:id="name2" layoutX="149.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
-            <!--<Text fx:id="rank2" layoutX="362.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
-            <!--<Text fx:id="score2" layoutX="571.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
-            <!--<Text fx:id="name2" layoutX="149.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
-            <!--<Text fx:id="rank2" layoutX="362.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
-            <!--<Text fx:id="score2" layoutX="571.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
-            <!--<Text fx:id="name2" layoutX="149.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
-            <!--<Text fx:id="rank2" layoutX="362.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
-            <!--<Text fx:id="score2" layoutX="571.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
-            <!--<Text fx:id="name2" layoutX="149.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
-            <!--<Text fx:id="rank2" layoutX="362.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
-            <!--<Text fx:id="score2" layoutX="571.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
-            <!--<Text fx:id="name2" layoutX="149.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
-            <!--<Text fx:id="rank2" layoutX="362.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
-            <!--<Text fx:id="score2" layoutX="571.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
-            <!--<Text fx:id="name2" layoutX="149.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
-            <!--<Text fx:id="rank2" layoutX="362.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
-            <!--<Text fx:id="score2" layoutX="571.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
-            <!--<Text fx:id="name2" layoutX="149.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
-            <!--<Text fx:id="rank2" layoutX="362.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
-            <!--<Text fx:id="score2" layoutX="571.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />-->
+            <Button fx:id="playAgain2Button" layoutX="623.0" layoutY="540.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="43.0" prefWidth="91.0" text="Go back" />
+            <Text fx:id="name4" layoutX="149.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="rank4" layoutX="362.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="score4" layoutX="571.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="name5" layoutX="149.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="rank5" layoutX="362.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="score5" layoutX="571.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="name6" layoutX="149.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="rank6" layoutX="362.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="score6" layoutX="571.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="name7" layoutX="149.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="rank7" layoutX="362.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="score7" layoutX="571.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="name8" layoutX="149.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="rank8" layoutX="362.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="score8" layoutX="571.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="name9" layoutX="149.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="rank9" layoutX="362.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="score9" layoutX="571.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="name10" layoutX="149.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="rank10" layoutX="362.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="score10" layoutX="571.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="descriptionPane" layoutX="153.0" layoutY="93.0" prefHeight="600.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="645.0" fitWidth="929.0" layoutX="-6.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/51.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="206.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Greetings commander!">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text layoutX="90.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Today you will learn about the battle of Marathon that ended the first Greco-Persian war in 490 B.C." wrappingWidth="581.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="90.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The game has four stages:" wrappingWidth="581.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="129.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-Battle background" wrappingWidth="581.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="129.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-Military campaign" wrappingWidth="581.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="129.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-Battle stage" wrappingWidth="581.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="129.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-Battle aftermath" wrappingWidth="581.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="90.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By the end you will learn the political reasons that lead to the conflict, historical figures, dates, battle tactics used, as well as the importance of the battle." wrappingWidth="581.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="descriptionButton" layoutX="580.0" layoutY="500.0" mnemonicParsing="false" onAction="#buttonMethod" prefHeight="43.0" prefWidth="91.0" text="Continue" />
+            <ImageView fitHeight="182.0" fitWidth="273.0" layoutX="360.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/im5.jpg" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </children>

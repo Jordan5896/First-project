@@ -657,6 +657,69 @@ public class Controller {
     private Text score2;
 
     @FXML
+    private Text name4;
+
+    @FXML
+    private Text score4;
+
+    @FXML
+    private Text rank4;
+
+    @FXML
+    private Text name5;
+
+    @FXML
+    private Text score5;
+
+    @FXML
+    private Text rank5;
+
+    @FXML
+    private Text name6;
+
+    @FXML
+    private Text score6;
+
+    @FXML
+    private Text rank6;
+
+    @FXML
+    private Text name7;
+
+    @FXML
+    private Text score7;
+
+    @FXML
+    private Text rank7;
+
+    @FXML
+    private Text name8;
+
+    @FXML
+    private Text score8;
+
+    @FXML
+    private Text rank8;
+
+    @FXML
+    private Text name9;
+
+    @FXML
+    private Text score9;
+
+    @FXML
+    private Text rank9;
+
+    @FXML
+    private Text name10;
+
+    @FXML
+    private Text score10;
+
+    @FXML
+    private Text rank10;
+
+    @FXML
     private Text name3;
 
     @FXML
@@ -667,6 +730,12 @@ public class Controller {
 
     @FXML
     private Button playAgain2Button;
+
+    @FXML
+    private AnchorPane descriptionPane;
+
+    @FXML
+    private Button descriptionButton;
 
 
     @FXML
@@ -683,15 +752,16 @@ public class Controller {
             //startButton.setVisible(false);
             System.out.print(enterName.getText());
 
-            g.startGame();
             //d.loadDatabaseFunction();
-
-
+            g.descriptionFunction();
         }
+        else if(b.equals(descriptionButton)){
+            g.startGame();
+        }
+
         else if(b.equals(introButton)){
             g.introFunction();
             a.army1Animation(army1);
-
         }
         else if(b.equals(ionianButton)){
             g.dariusFunction();
@@ -910,6 +980,7 @@ public class Controller {
             a.greekRightAdvance(gr3);
 
             a.persianCavalryRetreat(persianCavalryElipse);
+            battle2Button.setVisible(true);
         }
 
         else if(b.equals(battle2Button)){
@@ -1030,8 +1101,7 @@ public class Controller {
         }
 
         else if(b.equals(playAgain2Button)){
-            g.startGame();
-            highScoresPane.setVisible(false);
+            g.returnToTriumphFunction();
         }
 
 
@@ -1041,7 +1111,6 @@ public class Controller {
     public Button getStartButton() {
         return startButton;
     }
-
 
 
     public AnchorPane getPane1() {
@@ -1470,5 +1539,93 @@ public class Controller {
 
     public Text getRank3() {
         return rank3;
+    }
+
+    public Text getName4() {
+        return name4;
+    }
+
+    public Text getScore4() {
+        return score4;
+    }
+
+    public Text getRank4() {
+        return rank4;
+    }
+
+    public Text getName5() {
+        return name5;
+    }
+
+    public Text getScore5() {
+        return score5;
+    }
+
+    public Text getRank5() {
+        return rank5;
+    }
+
+    public Text getName6() {
+        return name6;
+    }
+
+    public Text getScore6() {
+        return score6;
+    }
+
+    public Text getRank6() {
+        return rank6;
+    }
+
+    public Text getName7() {
+        return name7;
+    }
+
+    public Text getScore7() {
+        return score7;
+    }
+
+    public Text getRank7() {
+        return rank7;
+    }
+
+    public Text getName8() {
+        return name8;
+    }
+
+    public Text getScore8() {
+        return score8;
+    }
+
+    public Text getRank8() {
+        return rank8;
+    }
+
+    public Text getName9() {
+        return name9;
+    }
+
+    public Text getScore9() {
+        return score9;
+    }
+
+    public Text getRank9() {
+        return rank9;
+    }
+
+    public Text getName10() {
+        return name10;
+    }
+
+    public Text getScore10() {
+        return score10;
+    }
+
+    public Text getRank10() {
+        return rank10;
+    }
+
+    public AnchorPane getDescriptionPane() {
+        return descriptionPane;
     }
 }
